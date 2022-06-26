@@ -73,29 +73,23 @@
     "type": "function"
   },
   {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "amt",
-        "type": "uint256"
-      }
-    ],
-    "name": "mint",
+    "inputs": [],
+    "name": "flipPublicSaleState",
     "outputs": [],
-    "stateMutability": "payable",
+    "stateMutability": "nonpayable",
     "type": "function"
   },
   {
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "amt",
+        "name": "quantity",
         "type": "uint256"
       }
     ],
-    "name": "ownerBatchMint",
+    "name": "mint",
     "outputs": [],
-    "stateMutability": "nonpayable",
+    "stateMutability": "payable",
     "type": "function"
   },
   {
@@ -197,7 +191,7 @@
     "inputs": [
       {
         "internalType": "string",
-        "name": "baseURI_",
+        "name": "baseURI",
         "type": "string"
       }
     ],
@@ -210,83 +204,11 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "maxPerTx_",
-        "type": "uint256"
-      }
-    ],
-    "name": "setMaxPerTx",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "maxPerWallet_",
-        "type": "uint256"
-      }
-    ],
-    "name": "setMaxPerWallet",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "maxSupply_",
-        "type": "uint256"
-      }
-    ],
-    "name": "setmaxSupply",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "quantity",
-        "type": "uint256"
-      }
-    ],
-    "name": "setOwnersExplicit",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "price_",
+        "name": "_NewPrice",
         "type": "uint256"
       }
     ],
     "name": "setPrice",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "totalFree_",
-        "type": "uint256"
-      }
-    ],
-    "name": "setTotalFree",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "toggleMinting",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -379,13 +301,19 @@
     "type": "function"
   },
   {
-    "inputs": [],
-    "name": "baseURI",
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "freeMinted",
     "outputs": [
       {
-        "internalType": "string",
+        "internalType": "bool",
         "name": "",
-        "type": "string"
+        "type": "bool"
       }
     ],
     "stateMutability": "view",
@@ -467,6 +395,19 @@
   },
   {
     "inputs": [],
+    "name": "maxPerAddress",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
     "name": "maxPerTx",
     "outputs": [
       {
@@ -480,38 +421,12 @@
   },
   {
     "inputs": [],
-    "name": "maxPerWallet",
+    "name": "maxToken",
     "outputs": [
       {
         "internalType": "uint256",
         "name": "",
         "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "maxSupply",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "mintEnabled",
-    "outputs": [
-      {
-        "internalType": "bool",
-        "name": "",
-        "type": "bool"
       }
     ],
     "stateMutability": "view",
@@ -608,6 +523,19 @@
     "type": "function"
   },
   {
+    "inputs": [],
+    "name": "publicSale",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
     "inputs": [
       {
         "internalType": "bytes4",
@@ -696,19 +624,6 @@
         "internalType": "string",
         "name": "",
         "type": "string"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "totalFree",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
       }
     ],
     "stateMutability": "view",
