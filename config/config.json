@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "Change it#TODO",
-  "SCAN_LINK": "https://etherscan.io/token/Change it#TODO",
+  "CONTRACT_ADDRESS": "0x1e653585fC200be193b586B6Fd3ac09cBa17Efc1",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x1e653585fC200be193b586B6Fd3ac09cBa17Efc1",
   "NETWORK": {
     "NAME": "ethereum",
     "SYMBOL": "eth",
@@ -8,9 +8,9 @@
   },
   "NFT_NAME": "Brokers Off Chain",
   "SYMBOL": "BOC",
-  "MAX_SUPPLY": 3333,
+  "MAX_SUPPLY": 100,
   "WEI_COST": 10000000000000000,
-  "DISPLAY_COST": 0.01,
+  "DISPLAY_COST": 0.0001,
   "GAS_LIMIT": 160000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/brokersoffchain",
