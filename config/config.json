@@ -1,10 +1,10 @@
 {
-  "CONTRACT_ADDRESS": "0x911ccC0534E0ced64Aa455195F3B920E40bC4405",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x911ccC0534E0ced64Aa455195F3B920E40bC4405",
+  "CONTRACT_ADDRESS": "0x562c2CbED8213093e9019752e9632d864C2074F2",
+  "SCAN_LINK": "https://etherscan.io/token/0x562c2CbED8213093e9019752e9632d864C2074F2",
   "NETWORK": {
-    "NAME": "rinkeby",
+    "NAME": "ethereum",
     "SYMBOL": "eth",
-    "ID": 4
+    "ID": 1
   },
   "NFT_NAME": "Brokers Off Chain",
   "SYMBOL": "BOC",
